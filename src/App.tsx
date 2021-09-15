@@ -4,7 +4,7 @@ import './App.css';
 import { Joust } from './Components/joust';
 import { Stretcher } from './Components/stretcher';
 import { Dialogue } from './Components/dialogue';
-import { Kids } from './kids';
+import { Kids } from './Components/kids';
 
 
 function App(): JSX.Element {
