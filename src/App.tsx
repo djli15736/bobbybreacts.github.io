@@ -1,13 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Joust } from './Components/joust';
 import { Stretcher } from './Components/stretcher';
 import { Dialogue } from './Components/dialogue';
 import { Kids } from './Components/kids';
+import { SwapButton } from './Components/SwapButton';
+import { Prompt } from './Components/Prompt';
 
 
 function App(): JSX.Element {
+  const [prompt, setPrompt] = useState<string>("Click for more Bobby B quotes");
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +24,11 @@ function App(): JSX.Element {
           <Kids type = "first son" name = "Joffery"></Kids>
           <Kids type = "daughter" name = "Myrcella"></Kids>
           <Kids type = "second son" name = "Tommen"></Kids>
+        </div>
+        <div> 
+          <p> </p>
+          <Prompt text = {prompt}></Prompt>
+          <SwapButton change = {setPrompt}></SwapButton>
         </div>
       </header>
     </div>
