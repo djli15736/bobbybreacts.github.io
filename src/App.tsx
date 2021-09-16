@@ -26,6 +26,7 @@ function App(): JSX.Element {
           <Kids type = "second son" name = "Tommen"></Kids>
         </div>
         <div>
+          <p> </p>
           <Prompt text = {prompt}></Prompt>
           <SwapButton change = {setPrompt}></SwapButton>
         </div>
