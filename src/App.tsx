@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import './App.css';
 import { Joust } from './Components/joust';
 import { Stretcher } from './Components/stretcher';
@@ -18,7 +18,7 @@ function App(): JSX.Element {
         <Joust text = "-Bobby B"></Joust>
         <Stretcher></Stretcher>
         <Dialogue text = "YOU HEARD THE MAN, THE KING'S TOO FAT FOR HIS ARMOR, GO FIND THE BREASTPLATE STRETCHER, NOW!"></Dialogue>
-        <img src = "http://images6.fanpop.com/image/polls/1368000/1368426_1398531886357_full.jpg?v=1398532217" />
+        <img src = "http://images6.fanpop.com/image/polls/1368000/1368426_1398531886357_full.jpg?v=1398532217" alt = "Lancel" />
         <Dialogue text = "LANCEL, GODS WHAT A STUPID NAME"></Dialogue>
         <div>
           <Kids type = "first son" name = "Joffery"></Kids>
